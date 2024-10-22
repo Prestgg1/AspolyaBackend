@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+:root{
+  --orange: #fae649;
+  --darkOrange: #ffba00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Section One START */
+#section-1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(../../assets/images/fix.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#section-1 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* İnner Texts */
+#section-1 .inner-section {
+  text-align: center;
+  color: #ffffff;
+  z-index: 2;
+}
+
+#section-1 .inner-section {
+  color: #f2f2f2;
+}
+
+#section-1 .inner-section .s1-p1 {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#section-1 .inner-section .s1-h2 {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+#section-1 .inner-section .s1-p2 {
+  font-size: 2.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+/* İnner Texts */
+
+/* Section One FINISH */
+/* Section One START */
+#section-2 {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+#section-2 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* İnner Texts */
+#section-2 .inner-section {
+  text-align: center;
+  color: #ffffff;
+  z-index: 2;
+}
+
+#section-2 .inner-section {
+  color: #f2f2f2;
+}
+
+#section-2 .inner-section .s1-p1 {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#section-2 .inner-section .s1-h2 {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+#section-2 .inner-section .s1-p2 {
+  font-size: 2.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+/* İnner Texts */
+
+/* Section One FINISH */
+
+
+/* Section Two START */
+
+#main{
+background: var(--background-secondary);
+width: 100%;
+min-width: min-content;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#main #section-3{
+width: 80%;
+height: 90%;
+background: var(--background-secondary);
+border-radius: 1rem;
+padding: 2rem;
+}
+
+#main #section-3 .f-title{
+color: #95b1f0;
+font-family: "Poppins", sans-serif;
+font-weight: 800;
+font-size: 1.4rem;
+font-style: normal;
+}
+
+#main #section-3 .s-title{
+color: #fa9746;
+font-size: 1.4rem;
+font-family: "Poppins", sans-serif;
+font-weight: 800;
+font-style: normal;
+}
+
+
+#main #section-3 .content > span{
+  color: var(--foreground-tertiary);
+} 
+/* Section Two FINISH */
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+.card {
+  flex-direction: column-reverse; /* Kartı dikey düzende göster */
+}
+
+
+}
+/* Responsive Design */

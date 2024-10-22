@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--background-secondary);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Section One START */
+.section {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Kutu yüksekliğini ihtiyacına göre ayarla */
+
+  background-size: cover; /* Resmin kutuyu tamamen kaplamasını sağlar */
+  background-position: center; /* Resmi ortalar */
+  background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+}
+
+.inner-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Yazıyı tam ortalamak için */
+  text-align: center;
+  color: white; /* Yazı rengi ihtiyaca göre değiştirilebilir */
+  z-index: 1; /* Yazının arka planın üstünde görünmesi için */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam bir katman ekler */
+  z-index: 0; /* Overlay'in arka planda olması için */
+}
+
+
+/* İnner Texts */
+#section-1 .inner-section {
+  text-align: center;
+  color: #ffffff;
+  z-index: 2;
+}
+
+#section-1 .inner-section {
+  color: #f2f2f2;
+}
+
+#section-1 .inner-section .s1-p1 {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#section-1 .inner-section .s1-h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+#section-1 .inner-section .s1-p2 {
+  font-size: 2.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+/* İnner Texts */
+
+#section-1 .inner-section h1 {
+  color: white;
+  filter: blur(2px);
+}
+/* Section One FINISH */
+/* Section Two START */
+#section-2 {
+  height: fit-content;
+  width: 100%;
+  margin: 5vh auto;
+  display: flex;
+  align-items: center;
+}
+
+#section-2 .left {
+  width: 40%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#section-2 .left .map {
+  height: 100%;
+  width: 100%;
+}
+
+#section-2 .right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--background-secondary);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+
+#section-2 .right .t{
+    background: var(--background-secondary);
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  height: max-content;
+  padding: 1rem;
+}
+
+#section-2 .right .t .box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#section-2 .right .t .box a{
+    color: var(--foreground-tertiary);
+  font-size: 1.2rem; 
+  text-decoration: none;
+ }
+#section-2 .right .t .box i{
+    color: var(--foreground-tertiary);
+ font-size: 1.2rem; 
+ margin-right: 5px;
+}
+#section-2 .right .b{
+    color: var(--foreground-tertiary);
+  width: 100%;
+  height: max-content;
+  padding: 1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  #section-2 {
+    flex-direction: column-reverse;
+  }
+  #section-2 .left,
+  #section-2 .right {
+    width: 100%;
+  }
+  .card {
+    flex-direction: column-reverse; /* Kartı dikey düzende göster */
+  }
+
+  #section-2 .container .cards .card .right img.image {
+    width: 50%;
+  }
+}
+/* Responsive Design */
+
+form label{
+  color: var(--foreground-tertiary);
+}
+
+
+@media (max-width: 1100px) {
+  .section {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .left, .right {
+      width: 100% !important;
+      text-align: center;
+  }
+
+  .right form {
+      width: 100% !important; /* Daha dar bir genişlik verelim */
+      padding-right: 10px !important;
+  }
+}
